@@ -1,0 +1,157 @@
+/* General Page Styles */
+body {
+    background-color: #0A0A32;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: #13134B;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Toggle Button */
+#toggle-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #6000B0;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#toggle-btn:hover {
+    background-color: #7A00E0;
+}
+
+/* Navigation Bar */
+#navbar {
+    background-color: #151565;
+    padding: 10px;
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#navbar ul li {
+    display: inline;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#navbar ul li a:hover {
+    background-color: #6000B0;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Specials Section */
+#specials {
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+#specials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Dish Container */
+.dish-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dish {
+    background-color: #6000B0;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dish:hover {
+    transform: scale(1.05);
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.dish p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #0A0A32;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .dish-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #toggle-btn {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}

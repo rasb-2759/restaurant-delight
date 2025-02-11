@@ -1,0 +1,238 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+/* Header and Navigation */
+header {
+    background-color: #403243; /* Dark background */
+    color: white; /* White text color for contrast */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #f1c40f; /* Adding a gold color to the text for better visibility */
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    color: white;
+    font-size: 1.1rem;
+}
+
+ul li a:hover {
+    color: #f1c40f; /* Gold color on hover */
+}
+
+.toggle-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.toggle-btn i {
+    font-size: 2rem;
+    color: white;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f491d5;
+    color: white;
+    padding: 50px 20px;
+    height: 100vh;
+    background-image: url('your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .wave {
+    font-size: 2rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.social-links a:hover {
+    color: #f1c40f;
+}
+
+.buttons a {
+    background-color: #f1c40f;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: black;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.buttons a:hover {
+    background-color: #e67e22;
+}
+
+/* About, Skills, Projects, Resume, Contact */
+#about, #skills, #projects, #resume, #contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px 0;
+}
+
+#about h2, #skills h2, #projects h2, #resume h2, #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about p, #skills p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#skills li {
+    background-color: #34495e;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.project {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Resume Section */
+#resume .btn {
+    background-color: #f1c40f;
+    padding: 10px 20px;
+    color: black;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#resume .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        background-color: #333;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    ul.active {
+        display: flex;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    #hero {
+        flex-direction: column;
+        height: auto;
+    }
+}
