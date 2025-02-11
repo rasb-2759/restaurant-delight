@@ -1,2 +1,2 @@
-# restaurant-delight
+Basic calculator
 this is my project
